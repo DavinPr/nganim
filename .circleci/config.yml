@@ -81,8 +81,7 @@ jobs:
                     echo "New Java Version : $NEW_JAVA_VER"
                     echo "New Java Compiler Version : $NEW_JAVAC_VER"
           environment:
-            PARAM_JAVA_VER: << parameters.java-version >>
-          name: Change OpenJDK version to << parameters.java-version >>
+            PARAM_JAVA_VER: 17
 
       - run:
           name: Download Dependencies
