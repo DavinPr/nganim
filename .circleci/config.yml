@@ -36,6 +36,9 @@ jobs:
             PARAM_JAVA_VER: 17
           name: Change OpenJDK version to 17
       - run:
+          name: Generate local properties
+          command: touch local.properties
+      - run:
           name: Download Dependencies
           command: ./gradlew androidDependencies
       - save_cache:
